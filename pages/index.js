@@ -1,11 +1,14 @@
-import { useState } from "react";
+import NavBar from "smootihe/components/NavBar";
 
 export default function Home(){
-    const [counter, setCounter] = useState(0);
     return (
         <div>
-            <h1>Hello {counter}</h1>
-            <button onClick={() => setCounter(prev => prev+1)}>+</button>
+            <h1>Hello</h1>
+            <style jsx global>{`
+                a {
+                    color:white;
+                }
+            `}</style>
         </div>
     );
 }
